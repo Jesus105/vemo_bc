@@ -58,6 +58,22 @@ export function md(s: string) {
     .replace(/`(.+?)`/g, '<code>$1</code>')
 }
 
+function Cards({ cards }: { cards: NonNullable<Slide['cards']> }) {
+  const color = (t?: string) => (t === 'bad' ? '#c0392b' : t === 'good' ? '#0f8a6a' : '#0b0b0b')
+  return (
+    <div className="grid gap-5" style={{ gridTemplateColumns: `repeat(${cards.length}, minmax(0,1fr))` }}>
+      {cards.map((c, i) => (
+        <div key={i} className="rounded-[12px] p-6 flex flex-col" style={{ background: '#f3f2ef', borderTop: `4px solid ${c.tone === 'bad' ? '#c0392b' : '#0f8a6a'}` }}>
+          {c.tag && <div className="text-[12px] font-semibold uppercase tracking-[0.06em]" style={{ color: '#898781' }}>{c.tag}</div>}
+          <div className="text-[21px] font-semibold leading-snug mt-2" dangerouslySetInnerHTML={{ __html: md(c.title) }} />
+          {c.big && <div className="text-[40px] font-semibold tnum leading-tight mt-4" style={{ color: color(c.tone) }}>{c.big}</div>}
+          {c.body && <div className="text-[16.5px] leading-normal mt-4" style={{ color: '#3d3c39' }} dangerouslySetInnerHTML={{ __html: md(c.body) }} />}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export function SlideRenderer({ s, n, total, brand = 'Vemo · Business Case Growth Analyst' }: { s: Slide; n: number; total: number; brand?: string }) {
   const hasVisual = !!(s.chart || s.table)
   const hasText = !!(s.bullets && s.bullets.length)
@@ -83,7 +99,8 @@ export function SlideRenderer({ s, n, total, brand = 'Vemo · Business Case Grow
               {s.table && <DeckTable t={s.table} large={!side && !s.chart} />}
             </div>
           )}
-          {hasText && <div className="min-h-0"><Bullets items={s.bullets!} size={side ? 15 : 16.5} /></div>}
+          {hasText && <div className="min-h-0"><Bullets items={s.bullets!} size={side ? 16 : 17} /></div>}
+          {s.cards && <div className="min-h-0"><Cards cards={s.cards} /></div>}
           {s.twoCol && (
             <div className="grid grid-cols-2 gap-8">
               {[{ t: s.twoCol.leftTitle, b: s.twoCol.left }, { t: s.twoCol.rightTitle, b: s.twoCol.right }].map((col, i) => (
@@ -95,6 +112,18 @@ export function SlideRenderer({ s, n, total, brand = 'Vemo · Business Case Grow
             </div>
           )}
         </div>
+        {s.takeaway && (
+          <div className="mt-4 rounded-[10px] px-5 py-3 text-[16px] leading-snug" style={{ background: '#e8f4ef', color: '#0b3d30' }}>
+            <span className="font-semibold" style={{ color: '#0f6e55' }}>{s.takeawayLabel ?? 'Qué hacer'} → </span>
+            <span dangerouslySetInnerHTML={{ __html: md(s.takeaway) }} />
+          </div>
+        )}
+        {s.method && (
+          <div className="mt-3 text-[12.5px] leading-snug" style={{ color: '#52514e' }}>
+            <span className="font-semibold">Cómo lo medí: </span>
+            <span dangerouslySetInnerHTML={{ __html: md(s.method) }} />
+          </div>
+        )}
         <div className="flex items-end justify-between pt-3 text-[11.5px]" style={{ color: '#898781' }}>
           <span className="max-w-[1000px]" dangerouslySetInnerHTML={{ __html: md(s.footer ?? brand) }} />
           <span className="tnum">{n} / {total}</span>

@@ -24,4 +24,8 @@ export type Slide = {
   footer?: string
   twoCol?: { left: string[]; right: string[]; leftTitle?: string; rightTitle?: string }
   notes?: string
+  cards?: { tag?: string; title: string; big?: string; body?: string; tone?: 'good' | 'bad' | 'neutral' }[]
+  method?: string
+  takeaway?: string
+  takeawayLabel?: string
 }

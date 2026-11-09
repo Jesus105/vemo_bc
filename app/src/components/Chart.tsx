@@ -6,7 +6,7 @@ export function fmtNum(v: number, unit?: string) {
   // '%' = valores ya en puntos porcentuales (46.1 → 46.1%)
   if (unit === '%') return `${+v.toFixed(Math.abs(v) < 10 ? 1 : 0)}%`
   const a = Math.abs(v)
-  const s = a >= 1e6 ? `${(v / 1e6).toFixed(1)} M` : a >= 1e4 ? `${(v / 1e3).toFixed(0)} k` : a >= 1000 ? v.toLocaleString('es-MX', { maximumFractionDigits: 0 }) : `${+v.toFixed(a < 10 ? 1 : 0)}`
+  const s = a >= 1e6 ? `${(v / 1e6).toFixed(1)} M` : a >= 1e4 ? `${(v / 1e3).toFixed(0)} k` : a >= 1000 ? v.toLocaleString('es-MX', { maximumFractionDigits: 0 }) : `${+v.toFixed(a < 1 ? 2 : a < 10 ? 1 : 0)}`
   return unit === '$' ? `$${s}` : unit && unit !== '%' ? `${s} ${unit}` : s
 }
 
@@ -29,7 +29,7 @@ export function Chart({ c, width = 560, height = 280, compact = false }: { c: Ch
   const max = rawMin < 0 ? Math.ceil(rawMax / tStep) * tStep : niceMax(rawMax)
 
   if (c.type === 'hbar') {
-    const labelW = Math.min(170, Math.max(...c.x.map((x) => x.length)) * 6.6 + 8)
+    const labelW = Math.min(170, Math.max(...c.x.map((x) => x.length)) * 7.6 + 14)
     const top = legend ? 26 : 6
     const rowH = (height - top - 6) / c.x.length
     const bw = (width - labelW - 60) / max

@@ -8,6 +8,8 @@ Entrega: **lunes 9-nov-2026, 5 pm** · máx. 7 láminas + anexo (cálculos + uso
 > - `Vemo_Anexo_Calculos.xlsx` (con fórmulas), también en [Google Sheet](https://docs.google.com/spreadsheets/d/1FK5lK3L-FRlHqhxH8Y-Vezhyul2obZITFUhgZcq9e-A/edit)
 > - `Anexo_Uso_IA_y_Calculos.md` (cálculos, verificación y correcciones a la IA)
 >
+> **Cómo se hizo cada paso:** `docs/BRIEF_PROYECTO.md` (también en PDF).
+>
 > Investigación pública: `docs/investigacion_mercado.md`. Dashboards: `app/` (`#/dashboard/impulso|conduce|watts`).
 >
 > Para reproducir todo:

@@ -7,7 +7,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "deploy": "npm run build && mkdir -p dist/.vercel && cp .vercel-link/project.json dist/.vercel/ && npx vercel@latest deploy dist --prod --yes"
+    "deploy": "npx vercel@latest deploy --prod --yes"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

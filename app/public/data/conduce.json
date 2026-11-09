@@ -1,0 +1,267 @@
+{
+ "title": "Vemo Conduce · retención y cobertura",
+ "answer": "Ninguna de las dos: el sur sí tiene leads; el problema es que 79% de sus firmas viven a 10+ km y se van en las primeras semanas. Propuesta focalizada en el sur: $0.9–$1.68 M de contribución en Q1 con $1.07 M comprometidos.",
+ "kpis": [
+  {
+   "label": "Retención a 90 días",
+   "value": "38%",
+   "sub": "firmas ene–6 ago, sin cierre de Roma",
+   "tone": "bad"
+  },
+  {
+   "label": "Cobertura oct Sur A / Sur B",
+   "value": "79% / 83%",
+   "sub": "meta 92%",
+   "tone": "bad"
+  },
+  {
+   "label": "Turnos bajo meta sur (oct)",
+   "value": "785",
+   "sub": "= $864 k/mes de contribución",
+   "tone": "bad"
+  },
+  {
+   "label": "Firmas sur que viven a 10+ km",
+   "value": "80%",
+   "sub": "vs 40% en otros hubs"
+  },
+  {
+   "label": "Bajas en ≤4 semanas",
+   "value": "55%",
+   "sub": "antes de que el bono pese"
+  },
+  {
+   "label": "Asistencia a inducción sur",
+   "value": "46%",
+   "sub": "vs 64% Centro",
+   "tone": "bad"
+  }
+ ],
+ "charts": [
+  {
+   "id": "cob",
+   "title": "Cobertura de turnos por hub (%)",
+   "type": "line",
+   "x": [
+    "ene",
+    "feb",
+    "mar",
+    "abr",
+    "may",
+    "jun",
+    "jul",
+    "ago",
+    "sep",
+    "oct"
+   ],
+   "series": [
+    {
+     "name": "Centro",
+     "values": [
+      93.0,
+      91.7,
+      94.0,
+      91.1,
+      93.0,
+      95.0,
+      94.4,
+      92.8,
+      93.6,
+      92.2
+     ]
+    },
+    {
+     "name": "Poniente",
+     "values": [
+      93.4,
+      93.2,
+      93.4,
+      92.3,
+      94.0,
+      92.9,
+      92.5,
+      93.4,
+      95.6,
+      94.1
+     ]
+    },
+    {
+     "name": "Norte",
+     "values": [
+      93.3,
+      92.8,
+      94.9,
+      95.3,
+      92.5,
+      92.9,
+      93.1,
+      90.8,
+      94.3,
+      93.7
+     ]
+    },
+    {
+     "name": "Sur A",
+     "values": [
+      83.4,
+      85.3,
+      85.8,
+      87.9,
+      87.2,
+      86.2,
+      86.0,
+      82.8,
+      81.0,
+      79.3
+     ]
+    },
+    {
+     "name": "Sur B",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      44.6,
+      70.8,
+      74.3,
+      81.2,
+      80.3,
+      82.9
+     ]
+    }
+   ],
+   "unit": "%",
+   "refLine": {
+    "value": 92,
+    "label": "Meta 92%"
+   }
+  },
+  {
+   "id": "ret_dist",
+   "title": "Retención a 90 días por zona y distancia casa-hub (%)",
+   "type": "bar",
+   "x": [
+    "Sur <10 km",
+    "Sur 10+ km",
+    "Resto <10 km",
+    "Resto 10+ km"
+   ],
+   "series": [
+    {
+     "name": "Retención 90d",
+     "values": [
+      46.1,
+      30.7,
+      44.0,
+      33.9
+     ]
+    }
+   ],
+   "unit": "%"
+  },
+  {
+   "id": "ret_horas",
+   "title": "Retención 90d por horas semanales (el bono sigue a las horas)",
+   "type": "bar",
+   "x": [
+    "<36 h",
+    "36–42 h",
+    "42–48 h",
+    "48+ h"
+   ],
+   "series": [
+    {
+     "name": "Retención 90d %",
+     "values": [
+      26.5,
+      36.9,
+      36.7,
+      45.7
+     ]
+    },
+    {
+     "name": "Bono prom. $/100",
+     "values": [
+      0.0,
+      1.2,
+      4.5,
+      8.7
+     ]
+    }
+   ]
+  },
+  {
+   "id": "funnel",
+   "title": "Leads y asistencia a inducción por hub",
+   "type": "bar",
+   "x": [
+    "Centro",
+    "Poniente",
+    "Norte",
+    "Sur A",
+    "Sur B"
+   ],
+   "series": [
+    {
+     "name": "Leads (ene–nov)",
+     "values": [
+      3915,
+      3146,
+      2902,
+      3882,
+      3416
+     ]
+    },
+    {
+     "name": "Firmas",
+     "values": [
+      539,
+      437,
+      395,
+      378,
+      329
+     ]
+    }
+   ]
+  }
+ ],
+ "tables": [
+  {
+   "title": "Propuestas evaluadas (Q1 2027)",
+   "columns": [
+    "Opción",
+    "Costo",
+    "Qué ataca",
+    "Veredicto"
+   ],
+   "rows": [
+    [
+     "Marketing: $1.5 M medios sur",
+     "$1.50 M",
+     "Más leads (sur ya tiene 3,882 leads, ≈ Centro)",
+     "No"
+    ],
+    [
+     "Operaciones: +30% bono a todos",
+     "$1.36 M",
+     "Bono; pero 32% de bajas ocurre en ≤2 semanas",
+     "No"
+    ],
+    [
+     "Propuesta: sur hiperlocal + permanencia temprana",
+     "$1.07 M + $0.43 M reserva",
+     "Distancia, inducción y primeras semanas",
+     "Sí"
+    ]
+   ]
+  }
+ ],
+ "notes": [
+  "84 firmas 'Sin canal' no existen en funnel_mensual (por eso Centro tiene 623 firmas vs 539).",
+  "Hub Roma cerró 15-abr: 43 bajas por 'Cierre de hub' se excluyen de la retención.",
+  "Semana de Hub Sur B anterior a su apertura (1-may) se excluye de cobertura.",
+  "Bono y horas: el bono se paga por horas → correlación con retención no es causal.",
+  "conductores sólo trae firmas 2026; los 725 activos incluyen contratados antes."
+ ]
+}

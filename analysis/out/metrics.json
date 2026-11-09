@@ -1,0 +1,250 @@
+{
+ "impulso": {
+  "tasa_riesgo_pre": 0.14956521739130435,
+  "exceso_riesgo": 1692.0,
+  "costo_exceso": 304560.0,
+  "exceso_mes": 282.0,
+  "envios_post_avg": 812.3333333333334,
+  "meses_sobre_cap": 5,
+  "aprob_pre": 0.5304347826086957,
+  "aprob_post": 0.32519491177677473,
+  "dias_pre": 3.9,
+  "dias_oct": 7.9,
+  "l2e_pre": 0.045454545454545456,
+  "l2e_post": 0.06675124426661462,
+  "cal2e_post": 0.4861407249466951,
+  "ent_coh_pre": 81.0,
+  "ent_coh_post": 136.8,
+  "perd_dep_post": 0.17245119305856832,
+  "vis2e_post": 0.7418655097613883,
+  "cac": {
+   "Meta": 2721.691105121294,
+   "Google": 6231.227686567165,
+   "TikTok": 1699.300930232558,
+   "Referidos": 0.0,
+   "Orgánico": 0.0
+  },
+  "cpl": {
+   "Meta": 177.9604159323229,
+   "Google": 459.0349147883453,
+   "TikTok": 120.37881383855023,
+   "Referidos": 0.0,
+   "Orgánico": 0.0
+  },
+  "cpl_paid": 228.65186516595847,
+  "cac_blend_post": 2910.631271929825,
+  "inv_jun": 453460.27999999997,
+  "inv_oct": 304108.6,
+  "calif_need": 822.8070175438597,
+  "aprob_filtro": 0.49811439346323066,
+  "analisis_need": 1651.8434888483039,
+  "analistas": 7,
+  "leads_need": 5992.397660818713,
+  "paid_leads_need": 5684.397660818713,
+  "paid_leads_now": 1741.4,
+  "media_total": 1750535.012236815,
+  "cac_400": 4376.337530592037,
+  "costo_envios": 297331.8279926947,
+  "costo_analistas": 245000,
+  "costo_total_400": 2317866.8402295094,
+  "margen_400": 12000000,
+  "incremental_neto": 6147527.51777049,
+  "envios_con_filtro": 530.3333333333334,
+  "dq": []
+ },
+ "conduce": {
+  "ret_total": 0.3807968647942521,
+  "ret_seg": {
+   "Sur <10 km": 0.46078431372549017,
+   "Sur 10+ km": 0.30666666666666664,
+   "Resto <10 km": 0.439873417721519,
+   "Resto 10+ km": 0.33886255924170616
+  },
+  "share_lejos_sur": 0.7991513437057991,
+  "share_lejos_resto": 0.40052015604681407,
+  "baja_2sem": 0.3248355263157895,
+  "baja_4sem": 0.5509868421052632,
+  "ret_horas": {
+   "<36 h": 0.2647058823529412,
+   "36–42 h": 0.36895674300254455,
+   "42–48 h": 0.36727272727272725,
+   "48+ h": 0.4569377990430622
+  },
+  "bono_horas": {
+   "<36 h": 0.8823529411764706,
+   "36–42 h": 123.81679389312977,
+   "42–48 h": 445.2181818181818,
+   "48+ h": 866.578947368421
+  },
+  "ret_bono_alto": 0.3669064748201439,
+  "ret_bono_bajo": 0.36764705882352944,
+  "ret_turno": {
+   "Tarde": 0.3729508196721312,
+   "Noche": 0.3580705009276438,
+   "Mañana": 0.4126984126984127
+  },
+  "ret_hub": {
+   "Hub Poniente": 0.39747634069400634,
+   "Hub Norte": 0.39325842696629215,
+   "Hub Centro": 0.4418604651162791,
+   "Hub Sur A": 0.36220472440944884,
+   "Hub Sur B": 0.31390134529147984
+  },
+  "gap_oct": {
+   "Hub Centro": 0,
+   "Hub Poniente": 0,
+   "Hub Norte": 0,
+   "Hub Sur A": 481,
+   "Hub Sur B": 304
+  },
+  "gap_sur_mes": 785,
+  "valor_gap_mes": 863500,
+  "valor_gap_q1": 2590500,
+  "perdidos_sur_oct": 1356,
+  "show": {
+   "Hub Centro": 0.6371584699453552,
+   "Hub Norte": 0.6346153846153846,
+   "Hub Poniente": 0.6476964769647696,
+   "Hub Roma": 0.6338028169014085,
+   "Hub Sur A": 0.4564498346196251,
+   "Hub Sur B": 0.4582798459563543
+  },
+  "leads_h": {
+   "Hub Centro": 3915,
+   "Hub Norte": 2902,
+   "Hub Poniente": 3146,
+   "Hub Roma": 599,
+   "Hub Sur A": 3882,
+   "Hub Sur B": 3416
+  },
+  "sin_lead": 84,
+  "firmas_sur_mes": 79.0,
+  "bono_ops": 1357200.0,
+  "firmas_mkt_mes": 178.57142857142858,
+  "ret_sur_actual": 0.33962264150943394,
+  "plan": [
+   [
+    "Reclutamiento hiperlocal sur (radio ≤10 km: geo-segmentación Meta/Indeed, ferias y volanteo en colonias)",
+    360000
+   ],
+   [
+    "Bono de referido sur: $2,000 al llegar el referido a la semana 4 (~100 referidos)",
+    200000
+   ],
+   [
+    "Bono de permanencia sur para nuevos: $1,000 en semana 4 + $1,500 en semana 12 (~240 firmas)",
+    330000
+   ],
+   [
+    "Asistencia a inducción: recordatorios WhatsApp + apoyo de transporte $300 el día de inducción (~600 citados)",
+    180000
+   ],
+   [
+    "Reserva condicionada a resultados del mes 1 (se libera si la cobertura sur sube ≥3 pp)",
+    430000
+   ]
+  ],
+  "lift_ret": 0.13655697575080494,
+  "show_lift": 0.20495169082125608,
+  "pleno_mes": 784.8000000000002,
+  "turnos_q1": 1530.3600000000004,
+  "valor_q1": 1683396.0000000005,
+  "cob_oct": {
+   "Hub Centro": 0.9224702380952381,
+   "Hub Poniente": 0.9406926406926407,
+   "Hub Norte": 0.9366666666666666,
+   "Hub Sur A": 0.7928571428571428,
+   "Hub Sur B": 0.8294642857142858
+  }
+ },
+ "watts": {
+  "promo": [
+   "D-02",
+   "D-05",
+   "D-16",
+   "D-17",
+   "D-18",
+   "D-19"
+  ],
+  "ses_jul": 357.0,
+  "ses_ago": 1174.0,
+  "ses_sep": 754.0,
+  "ses_oct": 875.0,
+  "mg_jul": 14986.31,
+  "mg_ago": 12734.000000000002,
+  "mg_sep": 40259.36,
+  "maduros": [
+   "D-02",
+   "D-05"
+  ],
+  "nuevos": [
+   "D-16",
+   "D-17",
+   "D-18",
+   "D-19"
+  ],
+  "uplift_maduros": 1.6738461538461538,
+  "uplift_ctrl": 1.0266865192990493,
+  "eleg": [
+   "D-02",
+   "D-05",
+   "D-07",
+   "D-15",
+   "D-18",
+   "D-19",
+   "D-20",
+   "D-21",
+   "D-22",
+   "D-23",
+   "D-24",
+   "D-25"
+  ],
+  "eleg_jovenes": [
+   "D-15",
+   "D-18",
+   "D-19",
+   "D-20",
+   "D-21",
+   "D-22",
+   "D-23",
+   "D-24",
+   "D-25"
+  ],
+  "debajo_costo": [
+   "D-02",
+   "D-05",
+   "D-07",
+   "D-22"
+  ],
+  "breakeven": {
+   "D-02": null,
+   "D-05": null,
+   "D-07": null,
+   "D-15": 3.070235443135605,
+   "D-18": 2.739019276053327,
+   "D-19": 2.320380995301332,
+   "D-20": 5.891794442819053,
+   "D-21": 7.378027138109603,
+   "D-22": null,
+   "D-23": 2.621147689677269,
+   "D-24": 2.588143864501311,
+   "D-25": 2.4412702815143534
+  },
+  "delta_mes": -64847.42500000002,
+  "delta_q1": -194542.27500000005,
+  "delta_sin_uplift_q1": -247435.29000000004,
+  "d04_u": 0.14905913978494623,
+  "d04_u_inst": 0.07452956989247311,
+  "d04_ses_jun": 460.0,
+  "d04_ses_oct": 392.0,
+  "fijo_dest": 384000.0,
+  "mg_dest_oct": 338695.2,
+  "neg_tras_fijo_maduros": [
+   "D-02",
+   "D-05",
+   "D-07",
+   "D-10",
+   "D-12"
+  ]
+ }
+}

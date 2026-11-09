@@ -1,0 +1,307 @@
+{
+ "title": "Vemo Impulso · funnel de arrendamiento",
+ "answer": "El agente de IA sí subió las entregas (+69% por cohorte), pero manda ~282 leads/mes que no cumplen requisitos y satura a Riesgo; 400 en un mes es viable hasta marzo 2027, no antes.",
+ "kpis": [
+  {
+   "label": "Entregas por cohorte (may–sep)",
+   "value": "137/mes",
+   "sub": "vs 81 pre-agente"
+  },
+  {
+   "label": "Envíos a análisis (may–oct)",
+   "value": "812/mes",
+   "sub": "capacidad 700 · 5 de 6 meses arriba",
+   "tone": "bad"
+  },
+  {
+   "label": "Aprobación buró+riesgo",
+   "value": "33%",
+   "sub": "vs 53% pre-agente",
+   "tone": "bad"
+  },
+  {
+   "label": "Días de análisis (mediana)",
+   "value": "7.9",
+   "sub": "vs 3.9 pre-agente",
+   "tone": "bad"
+  },
+  {
+   "label": "CAC medios (may–sep)",
+   "value": "$2,911",
+   "sub": "tope Finanzas $10,000",
+   "tone": "good"
+  },
+  {
+   "label": "Inversión medios oct vs jun",
+   "value": "-33%",
+   "sub": "$453 k → $304 k",
+   "tone": "bad"
+  }
+ ],
+ "charts": [
+  {
+   "id": "envios",
+   "title": "Envíos a análisis vs capacidad de Riesgo",
+   "type": "bar",
+   "x": [
+    "ene",
+    "feb",
+    "mar",
+    "abr",
+    "may",
+    "jun",
+    "jul",
+    "ago",
+    "sep",
+    "oct"
+   ],
+   "series": [
+    {
+     "name": "Calificados",
+     "values": [
+      133.0,
+      147.0,
+      167.0,
+      163.0,
+      242.0,
+      299.0,
+      293.0,
+      260.0,
+      256.0,
+      235.0
+     ]
+    },
+    {
+     "name": "Rechazo buró",
+     "values": [
+      80.0,
+      87.0,
+      90.0,
+      95.0,
+      101.0,
+      128.0,
+      144.0,
+      125.0,
+      128.0,
+      121.0
+     ]
+    },
+    {
+     "name": "Rechazo riesgo",
+     "values": [
+      37.0,
+      35.0,
+      46.0,
+      54.0,
+      302.0,
+      434.0,
+      485.0,
+      448.0,
+      397.0,
+      356.0
+     ]
+    }
+   ],
+   "stacked": true,
+   "refLine": {
+    "value": 700,
+    "label": "Capacidad 700"
+   }
+  },
+  {
+   "id": "dias",
+   "title": "Días de análisis (mediana)",
+   "type": "line",
+   "x": [
+    "ene",
+    "feb",
+    "mar",
+    "abr",
+    "may",
+    "jun",
+    "jul",
+    "ago",
+    "sep",
+    "oct",
+    "nov"
+   ],
+   "series": [
+    {
+     "name": "Días",
+     "values": [
+      4.0,
+      3.9,
+      3.9,
+      3.8,
+      6.2,
+      7.2,
+      7.3,
+      7.2,
+      7.2,
+      7.9,
+      8.5
+     ]
+    }
+   ],
+   "note": "Nov incompleto (extracción 4-nov)."
+  },
+  {
+   "id": "cohortes",
+   "title": "Entregas por cohorte de creación",
+   "type": "bar",
+   "x": [
+    "ene",
+    "feb",
+    "mar",
+    "abr",
+    "may",
+    "jun",
+    "jul",
+    "ago",
+    "sep"
+   ],
+   "series": [
+    {
+     "name": "Entregas",
+     "values": [
+      77.0,
+      69.0,
+      92.0,
+      86.0,
+      147.0,
+      152.0,
+      132.0,
+      121.0,
+      132.0
+     ]
+    }
+   ],
+   "note": "Oct/nov siguen abiertas."
+  },
+  {
+   "id": "inversion",
+   "title": "Inversión en medios por mes (MXN miles)",
+   "type": "line",
+   "x": [
+    "ene",
+    "feb",
+    "mar",
+    "abr",
+    "may",
+    "jun",
+    "jul",
+    "ago",
+    "sep",
+    "oct"
+   ],
+   "series": [
+    {
+     "name": "Inversión",
+     "values": [
+      338,
+      333,
+      394,
+      363,
+      364,
+      453,
+      440,
+      391,
+      342,
+      304
+     ]
+    },
+    {
+     "name": "Leads",
+     "values": [
+      1612.0,
+      1726.0,
+      1890.0,
+      1900.0,
+      1997.0,
+      2201.0,
+      2175.0,
+      2068.0,
+      1806.0,
+      1613.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cac",
+   "title": "CAC por canal (may–sep, MXN)",
+   "type": "hbar",
+   "x": [
+    "Meta",
+    "Google",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "CAC",
+     "values": [
+      2722,
+      6231,
+      1699
+     ]
+    }
+   ],
+   "refLine": {
+    "value": 10000,
+    "label": "Tope $10k"
+   }
+  }
+ ],
+ "tables": [
+  {
+   "title": "Modelo para 400 entregas en un mes",
+   "columns": [
+    "Concepto",
+    "Valor"
+   ],
+   "rows": [
+    [
+     "Conversión lead→entrega (cohortes may–sep)",
+     "6.68%"
+    ],
+    [
+     "Leads necesarios",
+     "5,992 /mes"
+    ],
+    [
+     "Calificados necesarios",
+     "823 /mes"
+    ],
+    [
+     "Aprobación con filtro de requisitos en el agente",
+     "50%"
+    ],
+    [
+     "Análisis necesarios",
+     "1,652 /mes → 7 analistas extra"
+    ],
+    [
+     "Medios",
+     "$1.75 M (CAC 4,376)"
+    ],
+    [
+     "Costo total del mes",
+     "$2.32 M"
+    ],
+    [
+     "Margen de contribución (400 × $30k)",
+     "$12.00 M"
+    ],
+    [
+     "Margen incremental neto vs hoy",
+     "$6.15 M /mes"
+    ]
+   ]
+  }
+ ],
+ "notes": [
+  "funnel_mensual (Dirección) mezcla cohortes: nov marca 24 entregas con 12 visitas. Usamos cohortes cerradas (may–sep) para tasas.",
+  "Exceso de rechazos de riesgo = rechazos por encima de la tasa pre-agente (15%); supuesto: son leads que no cumplen requisitos mínimos.",
+  "Supuesto: CPL incremental 50% más caro que el actual por saturación (no hay datos de escala)."
+ ]
+}

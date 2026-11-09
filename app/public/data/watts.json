@@ -1,0 +1,302 @@
+{
+ "title": "Vemo Watts · utilización y margen",
+ "answer": "No apruebo: la promo no se sostuvo y en los hubs maduros vendió debajo del costo; en Q1 costaría ≈ $195 k de margen aun con +70% de volumen. Mejor: demanda cautiva de la flota Vemo, precio por horario con piso y arreglar conectores.",
+ "kpis": [
+  {
+   "label": "Sesiones promo jul → ago",
+   "value": "357 → 1174",
+   "sub": "×3.3, pero 4 de 6 hubs abrieron en jun–jul"
+  },
+  {
+   "label": "Margen de energía promo ago",
+   "value": "$13 k",
+   "sub": "vs $15 k jul y $40 k sep",
+   "tone": "bad"
+  },
+  {
+   "label": "Alza real en hubs maduros",
+   "value": "×1.67",
+   "sub": "control ×1.03; vuelve a base en sep"
+  },
+  {
+   "label": "Hubs elegibles (<10% oct)",
+   "value": "12",
+   "sub": "9 con <6 meses (meta aún no aplica)"
+  },
+  {
+   "label": "Costo propuesta Q1",
+   "value": "$195 k",
+   "sub": "$247 k sin alza de volumen",
+   "tone": "bad"
+  },
+  {
+   "label": "D-04 utilización reportada vs instalada",
+   "value": "14.9% vs 7.5%",
+   "sub": "3 de 6 conectores caídos desde ago",
+   "tone": "bad"
+  }
+ ],
+ "charts": [
+  {
+   "id": "ses_promo",
+   "title": "Sesiones en los 6 hubs de la promo",
+   "type": "bar",
+   "x": [
+    "may",
+    "jun",
+    "jul",
+    "ago",
+    "sep",
+    "oct"
+   ],
+   "series": [
+    {
+     "name": "Maduros (D-02, D-05)",
+     "values": [
+      168.0,
+      185.0,
+      162.0,
+      272.0,
+      163.0,
+      156.0
+     ]
+    },
+    {
+     "name": "Nuevos (abiertos jun–jul)",
+     "values": [
+      0,
+      43.0,
+      195.0,
+      902.0,
+      591.0,
+      719.0
+     ]
+    }
+   ],
+   "stacked": true
+  },
+  {
+   "id": "mg_promo",
+   "title": "Margen de energía hubs maduros de la promo (MXN)",
+   "type": "bar",
+   "x": [
+    "may",
+    "jun",
+    "jul",
+    "ago",
+    "sep",
+    "oct"
+   ],
+   "series": [
+    {
+     "name": "D-02",
+     "values": [
+      1145,
+      1326,
+      1250,
+      -2247,
+      1200,
+      1064
+     ]
+    },
+    {
+     "name": "D-05",
+     "values": [
+      1268,
+      1393,
+      1112,
+      -3052,
+      1038,
+      1101
+     ]
+    }
+   ]
+  },
+  {
+   "id": "util_oct",
+   "title": "Utilización oct-2026, destination (%)",
+   "type": "hbar",
+   "x": [
+    "D-25",
+    "D-23",
+    "D-22",
+    "D-24",
+    "D-02",
+    "D-05",
+    "D-19",
+    "D-18",
+    "D-21",
+    "D-20",
+    "D-15",
+    "D-07",
+    "D-06",
+    "D-16",
+    "D-17",
+    "D-03",
+    "D-01",
+    "D-08",
+    "D-10",
+    "D-11",
+    "D-04",
+    "D-12",
+    "D-14",
+    "D-13",
+    "D-09"
+   ],
+   "series": [
+    {
+     "name": "Utilización",
+     "values": [
+      0.3,
+      1.8,
+      2.2,
+      3.2,
+      3.3,
+      4.1,
+      6.1,
+      6.2,
+      6.3,
+      7.7,
+      9.1,
+      9.1,
+      10.3,
+      10.6,
+      11.7,
+      11.7,
+      13.6,
+      14.4,
+      14.5,
+      14.7,
+      14.9,
+      16.3,
+      17.4,
+      19.1,
+      20.5
+     ]
+    }
+   ],
+   "unit": "%",
+   "refLine": {
+    "value": 10,
+    "label": "Corte 10%"
+   }
+  }
+ ],
+ "tables": [
+  {
+   "title": "Hubs que entrarían a la promo (oct < 10%)",
+   "columns": [
+    "Hub",
+    "Meses abierto",
+    "Utilización oct",
+    "Margen oct",
+    "Δ margen/mes con promo",
+    "kWh × para empatar"
+   ],
+   "rows": [
+    [
+     "D-02",
+     17,
+     "3.3%",
+     "$1,064",
+     "-$2,203",
+     "imposible"
+    ],
+    [
+     "D-05",
+     13,
+     "4.1%",
+     "$1,101",
+     "-$2,549",
+     "imposible"
+    ],
+    [
+     "D-07",
+     9,
+     "9.1%",
+     "$9,854",
+     "-$12,591",
+     "imposible"
+    ],
+    [
+     "D-15",
+     5,
+     "9.1%",
+     "$31,050",
+     "-$13,858",
+     "×3.1"
+    ],
+    [
+     "D-18",
+     3,
+     "6.2%",
+     "$14,653",
+     "-$5,558",
+     "×2.7"
+    ],
+    [
+     "D-19",
+     3,
+     "6.1%",
+     "$16,373",
+     "-$4,378",
+     "×2.3"
+    ],
+    [
+     "D-20",
+     2,
+     "7.7%",
+     "$14,298",
+     "-$10,173",
+     "×5.9"
+    ],
+    [
+     "D-21",
+     2,
+     "6.3%",
+     "$10,363",
+     "-$7,975",
+     "×7.4"
+    ],
+    [
+     "D-22",
+     1,
+     "2.2%",
+     "$2,693",
+     "-$3,402",
+     "imposible"
+    ],
+    [
+     "D-23",
+     1,
+     "1.8%",
+     "$4,775",
+     "-$1,678",
+     "×2.6"
+    ],
+    [
+     "D-24",
+     0,
+     "3.2%",
+     "$1,132",
+     "-$388",
+     "×2.6"
+    ],
+    [
+     "D-25",
+     0,
+     "0.3%",
+     "$308",
+     "-$94",
+     "×2.4"
+    ]
+   ]
+  }
+ ],
+ "notes": [
+  "Utilización con conectores operativos: si se caen conectores la utilización 'sube' (D-04). El corte <10% debe usar conectores instalados.",
+  "Supuestos: descuento 25% (punto medio), alza de volumen ×1.7 (la observada en hubs maduros), sin canibalización (optimista para Marketing).",
+  "Ingreso ya neto de LTO 25% + promo: en D-02/D-05 el precio efectivo con promo quedó debajo del costo de energía.",
+  "Hubs <6 meses todavía están en rampa natural: el 'triple' de sesiones mezcla rampa y promo."
+ ]
+}

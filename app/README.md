@@ -9,7 +9,7 @@ cuando haya dashboard, los datos irán como JSON en `public/data/` generados con
 npm install
 npm run dev      # http://localhost:5173
 npm run build    # dist/
-npm run deploy   # compila y publica a producción en Vercel (usa .vercel-link/project.json, no versionado)
+npm run deploy   # Vercel compila (vercel.json) y publica a producción: https://vemo-business-case.vercel.app
 ```
 
 Despliegue: proyecto `vemo-business-case` en Vercel. `vercel.json` ya trae build, salida `dist` y rutas SPA.

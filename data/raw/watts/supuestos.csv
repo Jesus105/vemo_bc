@@ -1,0 +1,5 @@
+Supuesto,Valor,Nota
+Utilización,,Horas-conector ocupadas ÷ horas-conector disponibles (conectores operativos × 24 h). Se usa 24 h para todos los hubs por consistencia
+Meta de utilización destination,0.12,A partir del sexto mes desde la apertura
+Margen de energía,,Ingreso − costo de la energía. No incluye el costo fijo del hub; inclúyelo si lo consideras relevante para tu recomendación
+Propuesta de Marketing para Q1 2027,,Repetir la promoción de agosto (descuentos de 20% a 30%) durante todo el trimestre en todos los hubs destination con utilización menor a 10% en octubre de 2026

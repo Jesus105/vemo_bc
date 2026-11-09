@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "postgres-vemo": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "postgresql://postgres:postgrespassword@localhost:5433/vemo"
+      ],
+      "env": {}
+    }
+  }
+}

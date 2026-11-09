@@ -1,0 +1,14 @@
+Vemo Watts · Case 3 · Datos
+Datos ficticios con fines de evaluación. Periodo: enero a octubre de 2026.
+""
+Cómo funciona Watts
+"Red de carga eléctrica con dos tipos de hub. Anchored: hubs grandes de carga rápida. Destination: cargadores en centros comerciales, universidades y plazas."
+"Segmentos: B2C (particulares), DiDi independiente (conductores de DiDi con auto propio) y LTO (clientes de Vemo Impulso; tienen 25% de descuento en su carga, que se combina con cualquier promoción)."
+"Promoción de agosto: del 1 al 31 de agosto de 2026, descuento sobre el precio público en 6 hubs destination (columna descuento_promo_agosto de la hoja hubs)."
+""
+Hojas
+"hubs: características, precio público por kWh, costo de la energía por kWh, costo fijo mensual (renta o reparto con el dueño del sitio) y descuento de la promoción de agosto."
+hub_mensual: resumen mensual por hub. Las horas disponibles se calculan con los conectores que estuvieron operativos (conectores_operativos_prom × 24 h × días abierto). No se separa por segmento: el ingreso ya incluye los descuentos LTO y de promoción.
+supuestos: definiciones y la propuesta a evaluar.
+""
+Nota: los datos se entregan tal como salen de los sistemas. Parte del trabajo es decidir si confías en ellos.

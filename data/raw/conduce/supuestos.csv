@@ -1,0 +1,12 @@
+Supuesto,Valor,Nota
+Contribución por turno cubierto,1100,"MXN por turno-auto con conductor (ingreso del turno menos energía, sueldo y bono)"
+Costo de inducción y capacitación,3500,"MXN por conductor que firma (instructor, uniforme, alta, primeras jornadas acompañado). Ya está en el presupuesto operativo; no sale de los $1.5 millones"
+Sueldo fijo semanal,3200,"MXN, más bono semanal por desempeño (horas y calidad de servicio)"
+Turnos por auto,3,"Mañana 06:00-14:00, Tarde 14:00-22:00, Noche 22:00-06:00. Cada conductor tiene asignado un turno-auto fijo; sus días de descanso los cubre personal de relevo y cuentan como turno cubierto"
+Conductores activos (promedio julio-septiembre 2026),725,Incluye a los contratados antes de 2026
+Bono semanal promedio por conductor activo,480,"MXN, julio-septiembre 2026"
+Meta de cobertura,0.92,"Turnos cubiertos ÷ turnos disponibles, por hub"
+Presupuesto adicional para Q1 2027,1500000,"MXN, una sola vez. Cualquier iniciativa que propongas se paga con este presupuesto"
+Inversión actual en medios para los hubs del sur,110000,"MXN al mes, promedio julio-octubre 2026: aprox. 41% de la inversión total (proporcional a sus leads), unos $1,400 por firma. La hoja inversion_mensual no separa por hub"
+Propuesta de Marketing,,"Usar los $1.5 millones en medios de reclutamiento para los hubs del sur durante Q1 2027 (~$500,000 adicionales al mes)"
+Propuesta de Operaciones,,"Subir 30% el bono por desempeño a todos los conductores durante Q1 2027 (13 semanas), pagado con el presupuesto adicional"

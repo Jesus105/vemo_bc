@@ -1,0 +1,16 @@
+Vemo Impulso · Case 1 · Datos
+Datos ficticios con fines de evaluación. Periodo: enero a noviembre de 2026. Extracción: 4 de noviembre de 2026 (noviembre está incompleto).
+""
+Etapas del funnel
+Lead creado → Contactado (por el agente de IA de WhatsApp o por un asesor) → Enviado a análisis (cumple requisitos mínimos y se manda a buró y riesgo) → Calificado (aprobó buró y riesgo) → Visita aprobada (asistió a su cita y su documentación quedó validada) → Entrega (pagó el depósito en garantía y recibió el auto).
+"El agente de IA empezó a operar el 1 de mayo de 2026. Antes, todo el contacto lo hacían asesores."
+""
+Hojas
+"funnel_mensual: el reporte que revisa Dirección. Cada columna cuenta los eventos que ocurrieron en ese mes calendario, sin importar cuándo se creó el lead. dias_mediana_analisis = días entre el envío a análisis y la aprobación, para los calificados del mes."
+"cohortes: los leads creados desde enero de 2026, agrupados por el mes en que se crearon, con lo que han avanzado hasta la fecha de extracción. Como funnel_mensual también cuenta avances de leads creados a fines de 2025, los totales de ambas hojas no coinciden exactamente."
+"canales: inversión, leads y resultados por canal y mes de creación del lead. Referidos y Orgánico no tienen inversión en medios."
+supuestos: economía del negocio y restricciones operativas.
+"leads_aun_en_proceso: leads de la cohorte que todavía no se entregan ni se dan por perdidos a la fecha de extracción. Después de la visita, un lead puede perderse por no completar el depósito o por otros motivos (desistió o canceló)."
+"Si necesitas un dato que no está en el archivo (por ejemplo, cómo cambia el costo por lead al escalar), haz un supuesto explícito y dilo."
+""
+Nota: los datos se entregan tal como salen de los sistemas. Parte del trabajo es decidir si confías en ellos.

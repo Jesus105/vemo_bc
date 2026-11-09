@@ -1,0 +1,20 @@
+Vemo Conduce · Case 2 · Datos
+Datos ficticios con fines de evaluación. Firmas del 1 ene al 4 nov 2026. Extracción: 4 nov 2026.
+""
+Cómo funciona Conduce
+Vemo contrata conductores con sueldo fijo semanal más un bono por desempeño. Cada auto opera 3 turnos al día y cada turno lo cubre un conductor distinto.
+Un turno sin conductor es un auto parado durante ese turno.
+""
+Hojas
+conductores: una fila por firma (contratación). persona_id identifica a la persona aunque firme más de una vez. Fecha de baja vacía = sigue activo. distancia_casa_hub_km = distancia entre el domicilio registrado y el hub. horas_semanales_prom y bono_semanal_prom_mxn = promedio por semana mientras estuvo activo (el bono se paga según horas trabajadas y calidad de servicio).
+"hubs: autos por hub, aperturas y cierres."
+"cobertura_semanal: turnos disponibles (autos × días) y turnos cubiertos por un conductor activo, por semana, hub y turno. Incluye a conductores contratados antes de 2026. La primera semana y las semanas de apertura o cierre de un hub tienen menos de 7 días."
+"funnel_mensual: avance del reclutamiento por mes, hub y turno al que aplicó el candidato."
+"inversion_mensual: inversión en medios de reclutamiento por canal. Canales sin inversión: Website (página de Vemo), Otros (ferias, volanteo y bolsas de trabajo sin costo) y Sin canal (firma sin lead registrado)."
+supuestos: economía del turno y restricciones.
+""
+Etapas del funnel de reclutamiento
+Lead → Centro de carga (cumple requisitos mínimos) → Revisión (pasa al equipo de hiring) → Citado a inducción → Asistió a inducción → Firma.
+"""Centro de carga"" es el nombre interno de la etapa de filtro automático; no tiene relación con carga eléctrica."
+""
+Nota: los datos se entregan tal como salen de los sistemas. Parte del trabajo es decidir si confías en ellos.

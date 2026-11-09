@@ -1,0 +1,10 @@
+Supuesto,Valor,Nota
+Margen de contribución por auto entregado,30000,"MXN por contrato. Para este case, cuéntalo completo en el mes de la entrega"
+CAC máximo por entrega,10000,MXN de inversión en medios por auto entregado. Política de Finanzas
+Capacidad del equipo de Riesgo,700,"Análisis por mes sin generar retraso. Cada analista adicional cuesta $35,000 al mes y suma 150 análisis al mes; contratarlo y capacitarlo toma 6 semanas"
+Costo por envío a análisis,180,MXN por lead enviado: consulta de buró más tiempo del analista
+Costo del agente de IA,25000,MXN al mes (licencia y mensajes de WhatsApp)
+Requisitos mínimos,,6 meses o más de antigüedad en DiDi o Uber y licencia vigente. Riesgo rechaza siempre a quien no los cumple
+Depósito en garantía,15000,"MXN, se paga antes de la entrega"
+Inventario disponible,450,Tope de autos por mes. Hoy se piden unos 150 al mes; cualquier aumento se pide al proveedor con 60 días de anticipación
+Objetivo de Dirección,400,Entregas en un mes

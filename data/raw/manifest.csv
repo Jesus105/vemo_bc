@@ -1,0 +1,17 @@
+case,sheet,data_rows,cols,path
+impulso,LEEME,16,1,data/raw/impulso/LEEME.csv
+impulso,funnel_mensual,11,11,data/raw/impulso/funnel_mensual.csv
+impulso,cohortes,11,11,data/raw/impulso/cohortes.csv
+impulso,canales,55,6,data/raw/impulso/canales.csv
+impulso,supuestos,9,3,data/raw/impulso/supuestos.csv
+conduce,LEEME,20,1,data/raw/conduce/LEEME.csv
+conduce,conductores,2245,11,data/raw/conduce/conductores.csv
+conduce,hubs,6,6,data/raw/conduce/hubs.csv
+conduce,cobertura_semanal,657,5,data/raw/conduce/cobertura_semanal.csv
+conduce,funnel_mensual,165,9,data/raw/conduce/funnel_mensual.csv
+conduce,inversion_mensual,55,3,data/raw/conduce/inversion_mensual.csv
+conduce,supuestos,11,3,data/raw/conduce/supuestos.csv
+watts,LEEME,14,1,data/raw/watts/LEEME.csv
+watts,hubs,31,10,data/raw/watts/hubs.csv
+watts,hub_mensual,207,10,data/raw/watts/hub_mensual.csv
+watts,supuestos,4,3,data/raw/watts/supuestos.csv

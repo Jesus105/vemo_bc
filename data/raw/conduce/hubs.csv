@@ -1,0 +1,7 @@
+hub,zona,autos,fecha_apertura,fecha_cierre,nota
+Hub Roma,Centro,30,2024-03-01,2026-04-15,Cerró; sus autos y conductores activos pasaron a Hub Centro
+Hub Centro,Centro,50,2024-01-15,,Recibió 30 autos de Hub Roma el 15 de abril de 2026 (80 autos desde entonces)
+Hub Poniente,Poniente,55,2024-06-01,,
+Hub Norte,Norte,50,2024-09-01,,
+Hub Sur A,Sur,45,2025-02-01,,
+Hub Sur B,Sur,40,2026-05-01,,

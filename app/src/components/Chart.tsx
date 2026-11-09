@@ -6,7 +6,7 @@ export function fmtNum(v: number, unit?: string) {
   // '%' = valores ya en puntos porcentuales (46.1 → 46.1%)
   if (unit === '%') return `${+v.toFixed(Math.abs(v) < 10 ? 1 : 0)}%`
   const a = Math.abs(v)
-  const s = a >= 1e6 ? `${(v / 1e6).toFixed(1)} M` : a >= 1e4 ? `${(v / 1e3).toFixed(0)} k` : a >= 1000 ? v.toLocaleString('es-MX', { maximumFractionDigits: 0 }) : `${+v.toFixed(a < 1 ? 2 : a < 10 ? 1 : 0)}`
+  const s = a >= 1e6 ? `${(v / 1e6).toFixed(1)} M` : a >= 1e4 ? `${(v / 1e3).toFixed(0)} k` : a >= 1000 ? v.toLocaleString('es-MX', { maximumFractionDigits: 0 }) : `${+v.toFixed(a < 1 ? 2 : a < 100 ? 1 : 0)}`
   return unit === '$' ? `$${s}` : unit && unit !== '%' ? `${s} ${unit}` : s
 }
 

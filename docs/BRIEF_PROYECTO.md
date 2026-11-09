@@ -14,7 +14,7 @@
 | Impulso | No es viable el próximo mes; realista en **marzo 2027** | +$6.1 M/mes de margen neto en el mes de 400 (costo $2.3 M/mes) |
 | Conduce | **Ninguna** de las dos; reclutamiento cercano en el sur + permanencia temprana | $0.9–1.7 M de contribución en Q1 con $1.07 M comprometidos |
 | Watts | **No**; medir bien, reparar conectores, flota Vemo en horas valle, precio por horario con piso | Evita perder $0.19–0.25 M de margen en Q1 |
-| Pregunta final | Analizar a fondo **Impulso** | $7.9 M/mes en juego vs $0.86 M y $0.07 M |
+| Pregunta final | Analizar a fondo **Impulso** | $23.7 M en juego en el trimestre vs $2.6 M (Conduce) y $0.2 M (Watts) |
 
 | Entregable | Dónde |
 |---|---|
@@ -228,7 +228,7 @@
 ## Paso 7 · Pregunta final
 
 Comparé los tres cases por lo que está en juego, la urgencia y lo que no se sabe:
-- **En juego:** Impulso, $7.9 M/mes (263 entregas × $30 k); Conduce, $0.86 M/mes; Watts, ~$0.07 M/mes.
+- **En juego en un trimestre:** Impulso, $23.7 M (263 entregas × $30 k × 3 meses; $7.9 M/mes); Conduce, $2.6 M (785 turnos × $1,100 × 3; $0.86 M/mes); Watts, ~$0.2 M (margen que costaría la promo en Q1).
 - **Urgencia:** la de Impulso es alta, porque lo que no se pida en noviembre no llega en enero.
 - **Incertidumbre:** Impulso también es el que tiene más (el CPL al escalar, la capacidad de visitas).
 - **Mientras tanto:** Conduce y Watts tienen una decisión clara y de riesgo acotado. Se ejecutan con un gate a 4 semanas.

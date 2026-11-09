@@ -30,7 +30,7 @@ export const analysisSlides: Slide[] = [
         body: 'Eso costaría repetirla en Q1. Mejor: arreglar cargadores, mandar a la flota de Vemo y bajar precio solo en horas vacías.',
       },
     ],
-    takeaway: 'Si solo pudiera profundizar en uno: **Impulso**. Hay $7.9 M al mes en juego y el reloj ya corre.',
+    takeaway: 'Si solo pudiera profundizar en uno: **Impulso**. Hay **$23.7 M en juego en el trimestre** ($7.9 M al mes) y el reloj ya corre.',
     footer: FUENTE,
   },
   {
@@ -132,14 +132,14 @@ export const analysisSlides: Slide[] = [
     title: 'Si solo pudiera analizar uno a fondo: Impulso',
     chart: {
       id: 'fin-stakes',
-      title: 'Dinero en juego cada mes (MXN millones)',
+      title: 'Dinero en juego en un trimestre (MXN millones)',
       type: 'hbar',
       x: ['Impulso', 'Conduce', 'Watts'],
-      series: [{ name: 'En juego', values: [7.9, 0.86, 0.07] }],
-      note: 'Impulso: 263 entregas faltantes × $30 k. Conduce: 785 turnos vacíos × $1,100. Watts: margen que se perdería con la promo.',
+      series: [{ name: 'En juego', values: [23.7, 2.6, 0.19] }],
+      note: 'Impulso: 263 entregas faltantes × $30 k × 3 meses. Conduce: 785 turnos vacíos × $1,100 × 3. Watts: margen que se perdería con la promo en Q1.',
     },
     bullets: [
-      '**Más dinero:** cada entrega que falta para 400 son $30 k. Son 263 entregas al mes.',
+      '**Más dinero:** faltan 263 entregas al mes para 400, a $30 k cada una: **$23.7 M en el trimestre**, 9 veces lo de Conduce.',
       '**Más urgente:** lo que no se pida en noviembre (autos, analistas) no llega en enero.',
       '**Más incertidumbre:** no sé cuánto sube el costo de los anuncios al triplicar, ni si alcanza la capacidad de visitas y entregas.',
       '**Mientras tanto:** en Conduce arrancar el piloto del sur con el dinero condicionado; en Watts no lanzar la promo y reparar D-04.',

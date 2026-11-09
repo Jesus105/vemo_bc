@@ -5,7 +5,7 @@ Entrega: **lunes 9-nov-2026, 5 pm** · máx. 7 láminas + anexo (cálculos + uso
 
 > Estado: **análisis terminado.** Entregables en `entregables/`:
 > - `Vemo_Deck_Analisis.pdf` (7 láminas) y `Vemo_Deck_IA.pdf` (5 láminas)
-> - `Vemo_Anexo_Calculos.xlsx`, también en [Google Sheet](https://docs.google.com/spreadsheets/d/1FK5lK3L-FRlHqhxH8Y-Vezhyul2obZITFUhgZcq9e-A/edit)
+> - `Vemo_Anexo_Calculos.xlsx` (con fórmulas), también en [Google Sheet](https://docs.google.com/spreadsheets/d/1FK5lK3L-FRlHqhxH8Y-Vezhyul2obZITFUhgZcq9e-A/edit)
 > - `Anexo_Uso_IA_y_Calculos.md` (cálculos, verificación y correcciones a la IA)
 >
 > Investigación pública: `docs/investigacion_mercado.md`. Dashboards: `app/` (`#/dashboard/impulso|conduce|watts`).
@@ -13,7 +13,8 @@ Entrega: **lunes 9-nov-2026, 5 pm** · máx. 7 láminas + anexo (cálculos + uso
 > Para reproducir todo:
 > 1. `docker exec -i vemo-postgres psql -U postgres -d vemo < sql/03_analytical_views.sql`
 > 2. `tools/data_prep/.venv/bin/python -I analysis/vemo_model.py`
-> 3. `(cd app && npm run build) && node tools/pdf/build_deck_pdfs.mjs`
+> 3. `VEMO_SHEET_ID=… python -I tools/gsheets/build_vemo_sheet.py` (Sheet + xlsx)
+> 4. `(cd app && npm run build) && node tools/pdf/build_deck_pdfs.mjs`
 >
 > Verificación de la carga: `tools/data_prep/.venv/bin/python -I scripts/verify_xlsx_vs_db.py`
 

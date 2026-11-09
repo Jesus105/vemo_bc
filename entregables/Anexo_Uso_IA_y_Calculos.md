@@ -3,15 +3,15 @@
 ## Dónde están los cálculos
 | Qué | Dónde |
 |---|---|
-| Google Sheet del anexo (14 pestañas, con fórmulas en el funnel) | https://docs.google.com/spreadsheets/d/1FK5lK3L-FRlHqhxH8Y-Vezhyul2obZITFUhgZcq9e-A/edit |
+| Google Sheet del anexo: tasas y modelos con fórmulas, supuestos editables (azul sobre amarillo) y pestañas de datos | https://docs.google.com/spreadsheets/d/1FK5lK3L-FRlHqhxH8Y-Vezhyul2obZITFUhgZcq9e-A/edit |
 | Mismo contenido en Excel | `entregables/Vemo_Anexo_Calculos.xlsx` |
-| SQL: carga fiel y vistas analíticas comentadas | `sql/01_schema.sql`, `sql/02_load_data.sql`, `sql/03_analytical_views.sql` |
+| SQL: carga fiel y vistas analíticas comentadas | [`sql/03_analytical_views.sql`](https://github.com/Jesus105/vemo_bc/blob/main/sql/03_analytical_views.sql), [`01_schema`](https://github.com/Jesus105/vemo_bc/blob/main/sql/01_schema.sql), [`02_load_data`](https://github.com/Jesus105/vemo_bc/blob/main/sql/02_load_data.sql) |
 | Python: segunda vía desde los CSV crudos, modelos y exports | `analysis/vemo_model.py` → `analysis/out/metrics.json` |
 | Verificación de la carga (Excel vs Postgres, celda por celda) | `scripts/verify_xlsx_vs_db.py` |
 | Investigación pública (Vemo, competencia, benchmarks) | `docs/investigacion_mercado.md` |
 | Deck y dashboards | `entregables/Vemo_Deck_Analisis.pdf`, `entregables/Vemo_Deck_IA.pdf`, `app/` |
 
-Para reproducir todo: `./scripts/setup_postgres.sh` → `psql < sql/03_analytical_views.sql` → `python -I analysis/vemo_model.py` → `node tools/pdf/build_deck_pdfs.mjs`.
+Para reproducir todo: `./scripts/setup_postgres.sh` → `psql < sql/03_analytical_views.sql` → `python -I analysis/vemo_model.py` → `python -I tools/gsheets/build_vemo_sheet.py` → `node tools/pdf/build_deck_pdfs.mjs`.
 
 ## Cómo usé IA
 Usé Claude Code como analista ejecutor, con estas herramientas:

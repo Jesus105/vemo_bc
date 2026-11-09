@@ -1,5 +1,6 @@
+import { BackButton } from '../components/BackButton'
 import { useEffect, useRef, useState, type RefObject } from 'react'
-import { ArrowLeft, ChevronLeft, ChevronRight, Download, StickyNote } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Download, StickyNote } from 'lucide-react'
 import type { Slide } from '../types'
 import { H, SlideRenderer, W } from './SlideRenderer'
 
@@ -62,9 +63,7 @@ export function DeckViewer({ slides, route, title, pdf }: { slides: Slide[]; rou
   return (
     <div className="deck deck-viewer h-screen flex flex-col">
       <div className="h-12 shrink-0 flex items-center gap-3 px-4 border-b" style={{ borderColor: 'var(--border)' }}>
-        <a href="#/" className="inline-flex items-center gap-1 text-[13px]" style={{ color: 'var(--text-secondary)' }}>
-          <ArrowLeft size={14} /> Inicio
-        </a>
+        <BackButton />
         <span className="text-[13px] font-semibold ml-2">{title}</span>
         <div className="ml-auto flex items-center gap-2">
           <button className="chip" aria-pressed={notes} onClick={() => setNotes((v) => !v)} title="Notas (N)">

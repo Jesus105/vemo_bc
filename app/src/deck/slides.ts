@@ -219,7 +219,7 @@ export const aiSlides: Slide[] = [
     ],
     bullets: [
       '**Capa 1 · carga:** cada celda del Excel se compara contra la base (números exactos, fechas, vacíos vs NULL).',
-      '**Capa 2 · cálculo:** `analysis/vemo_model.py` recalcula desde los CSV crudos y falla si no cuadra con SQL (pestaña Verificación del Sheet).',
+      '**Capa 2 · cálculo:** `analysis/vemo_model.py` recalcula desde los CSV crudos y falla si no cuadra con SQL (pestaña "Control de cifras" del Sheet).',
       '**Capa 3 · sentido de negocio:** cada número se contrasta con el caso (capacidad 700, CAC ≤ $10 k, meta 92%, meta 12% desde el mes 6).',
     ],
   },

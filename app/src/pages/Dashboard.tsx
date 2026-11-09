@@ -1,5 +1,5 @@
+import { BackButton } from '../components/BackButton'
 import { useEffect, useState } from 'react'
-import { ArrowLeft } from 'lucide-react'
 import type { CaseData } from '../types'
 import { Chart } from '../components/Chart'
 import { md } from '../deck/SlideRenderer'
@@ -25,9 +25,7 @@ export function Dashboard({ id }: { id: string }) {
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-8">
       <div className="flex flex-wrap items-center gap-3">
-        <a href="#/" className="inline-flex items-center gap-1 text-[13px]" style={{ color: 'var(--text-secondary)' }}>
-          <ArrowLeft size={14} /> Inicio
-        </a>
+        <BackButton />
         <div className="seg ml-auto">
           {CASES.map((c) => (
             <button key={c.id} aria-pressed={c.id === id} onClick={() => (location.hash = `#/dashboard/${c.id}`)}>

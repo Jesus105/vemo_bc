@@ -246,5 +246,73 @@
    "D-10",
    "D-12"
   ]
- }
+ },
+ "checks": [
+  [
+   "impulso.exceso_riesgo may-oct (SQL v_exceso_riesgo)",
+   1692.0,
+   1692,
+   true
+  ],
+  [
+   "impulso.costo_exceso (SQL)",
+   304560.0,
+   304560,
+   true
+  ],
+  [
+   "impulso.entregas cohortes may-sep",
+   684.0,
+   684,
+   true
+  ],
+  [
+   "conduce.n observados (SQL: 1574 firmas ≤6-ago − 43 cierre de hub)",
+   1531,
+   1531,
+   true
+  ],
+  [
+   "conduce.n Sur <10 km (SQL v_retencion90)",
+   102,
+   102,
+   true
+  ],
+  [
+   "conduce.n Sur 10+ km (SQL v_retencion90)",
+   375,
+   375,
+   true
+  ],
+  [
+   "conduce.n Resto <10 km (SQL v_retencion90)",
+   632,
+   632,
+   true
+  ],
+  [
+   "conduce.n Resto 10+ km (SQL v_retencion90)",
+   422,
+   422,
+   true
+  ],
+  [
+   "conduce.gap oct Sur A (SQL)",
+   481,
+   481,
+   true
+  ],
+  [
+   "conduce.gap oct Sur B (SQL)",
+   304,
+   304,
+   true
+  ],
+  [
+   "watts.delta mensual propuesta (SQL v_propuesta_q1; SQL redondea precio efectivo a 2 dec.)",
+   -64847.42500000002,
+   -64902,
+   true
+  ]
+ ]
 }

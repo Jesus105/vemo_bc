@@ -5,7 +5,6 @@ Compara contra los valores obtenidos por SQL (sql/03_analytical_views.sql) y fal
 Escribe:
   - app/public/data/{impulso,conduce,watts}.json  (dashboards)
   - analysis/out/metrics.json                       (cifras del deck)
-  - entregables/Vemo_Anexo_Calculos.xlsx            (anexo; base del Google Sheet)
 Uso: tools/data_prep/.venv/bin/python -I analysis/vemo_model.py
 """
 import csv, json, math, pathlib, datetime as dt
@@ -412,47 +411,9 @@ watts_json = {
 }
 for name, obj in (("impulso", impulso_json), ("conduce", conduce_json), ("watts", watts_json)):
     (APPDATA / f"{name}.json").write_text(json.dumps(obj, ensure_ascii=False, indent=1, default=float), encoding="utf-8")
-(OUT / "metrics.json").write_text(json.dumps({"impulso": imp, "conduce": con, "watts": wat}, ensure_ascii=False, indent=1, default=str), encoding="utf-8")
+(OUT / "metrics.json").write_text(json.dumps({"impulso": imp, "conduce": con, "watts": wat, "checks": checks}, ensure_ascii=False, indent=1, default=str), encoding="utf-8")
 
-# ============================================================ XLSX anexo
-from openpyxl import Workbook
-from openpyxl.styles import Font, PatternFill
-wb = Workbook(); ws = wb.active; ws.title = "README"
-for row in [
-    ["Vemo · Business Case Growth Analyst · Anexo de cálculos"],
-    ["Fuente: Excel del caso (extracción 4-nov-2026) cargados sin cambios en Postgres; vistas en sql/03_analytical_views.sql."],
-    ["Segunda vía: analysis/vemo_model.py recalcula desde CSV crudos y compara contra SQL (pestaña Verificacion)."],
-    ["Pestañas: Conclusiones · Impulso_* · Conduce_* · Watts_* · Supuestos · Calidad_datos · Verificacion"],
-]: ws.append(row)
-ws["A1"].font = Font(bold=True, size=14)
-def sheet(title, header, rows):
-    s = wb.create_sheet(title); s.append(header)
-    for c in s[1]: c.font = Font(bold=True, color="FFFFFF"); c.fill = PatternFill("solid", fgColor="0F8A6A")
-    for r in rows: s.append(r)
-    for col in s.columns: s.column_dimensions[col[0].column_letter].width = max(12, min(60, max(len(str(c.value or "")) for c in col) + 2))
-    return s
-sheet("Conclusiones", ["Case", "Respuesta"], [["Impulso", impulso_json["answer"]], ["Conduce", conduce_json["answer"]], ["Watts", watts_json["answer"]]])
-s = sheet("Impulso_funnel", list(fm[0].keys()) + ["tasa_aprobacion", "envios_sobre_capacidad"], [])
-for i, r in enumerate(fm, start=2):
-    s.append(list(r.values()) + [f"=H{i}/E{i}", f"=E{i}-700"])
-sheet("Impulso_cohortes", list(coh[0].keys()), [list(r.values()) for r in coh])
-sheet("Impulso_canales_cac", ["canal", "inversion_may_sep", "leads", "entregas", "CPL", "CAC"],
-      [[k, v["inversion_mxn"], v["leads"], v["entregas_acumuladas"], cpl[k], cac.get(k)] for k, v in canal.items()])
-sheet("Impulso_modelo_400", ["Concepto", "Valor"], [[a, b] for a, b in impulso_json["tables"][0]["rows"]] + [
-    ["Supuesto CPL marginal ×", CPL_MARGINAL_MULT], ["Analistas: costo/mes", costo_analistas], ["Envíos: costo/mes", costo_envios], ["Medios: costo/mes", media_total]])
-sheet("Conduce_retencion", ["Segmento", "Retención 90d"], [[k, v] for k, v in {**ret_seg, **{f"Horas {k}": v for k, v in ret_horas.items()}, **{f"Turno {k}": v for k, v in ret_turno.items()}, **ret_hub}.items()])
-sheet("Conduce_cobertura", ["mes"] + hubs_act, [[m] + [cob_series[h][i] for h in hubs_act] for i, m in enumerate(meses_c)])
-sheet("Conduce_propuesta", ["Partida", "MXN"], plan + [["Total", plan_total], ["Valor estimado Q1 (contribución turnos)", valor_q1], ["Bono Operaciones (+30%)", bono_ops]])
-sheet("Watts_promo", ["hub_id", "mes", "sesiones", "kwh", "ingreso", "costo_energia", "margen_energia", "utilizacion", "utilizacion_instalada"],
-      [[r["hub_id"], r["mes"], r["sesiones"], r["kwh"], r["ingreso_mxn"], r["costo_energia_mxn"], r["mg"], r["u"], r["u_inst"]] for r in wm if r["hub_id"] in promo])
-sheet("Watts_propuesta_Q1", watts_json["tables"][0]["columns"], watts_json["tables"][0]["rows"])
-sup = []
-for case in ("impulso", "conduce", "watts"):
-    for r in rd(case, "supuestos"): sup.append([case, r["Supuesto"], r["Valor"], r["Nota"]])
-sheet("Supuestos", ["case", "supuesto", "valor", "nota"], sup)
-sheet("Calidad_datos", ["case", "hallazgo"], [["impulso", x] for x in dq_impulso] + [["conduce", n] for n in conduce_json["notes"]] + [["watts", n] for n in watts_json["notes"][:1]])
-sheet("Verificacion", ["chequeo", "python (CSV)", "SQL", "ok"], [[a, b, c, "OK" if d else "FALLA"] for a, b, c, d in checks])
-wb.save(ENT / "Vemo_Anexo_Calculos.xlsx")
+# El anexo (xlsx + Google Sheet) lo construye tools/gsheets/build_vemo_sheet.py con fórmulas.
 
 for a, b, c, d in checks: print(f"{'OK ' if d else 'FAIL'} {a}: {b:,.1f} vs {c:,.1f}")
 assert all(d for *_, d in checks), "verificación falló"
